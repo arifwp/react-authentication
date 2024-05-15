@@ -25,7 +25,8 @@ function AuthForm() {
             style={{
               backgroundColor: "red",
               padding: "4px",
-              marginBottom: "4px",
+              marginBottom: "6px",
+              width: "fit-content",
             }}
           >
             <ul>
@@ -37,8 +38,14 @@ function AuthForm() {
         )}
 
         {data && data.message && (
-          <div style={{ backgroundColor: "red", padding: "4px" }}>
-            <p style={{ color: "black", paddingLeft: "4px" }}>{data.message}</p>
+          <div
+            style={{
+              backgroundColor: "red",
+              padding: "4px",
+              width: "fit-content",
+            }}
+          >
+            <p style={{ color: "black" }}>{data.message}</p>
           </div>
         )}
         <p>
